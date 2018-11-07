@@ -1,0 +1,135 @@
+<h1 id="kalooh">Kalooh Developer Guide</h1>
+
+<p>Kalooh is a location-based social media app that lets users post “notes” based on their current location and allows others in the area to view and comment on these notes.</p>
+
+<hr />
+
+<h3 id="features">Features:</h3>
+
+<ul>
+<li>Dynamic Maps/Geolocation</li>
+
+<li>Authentication with email and OAuth providers</li>
+
+<li>Real-time messaging</li>
+</ul>
+
+<h2 id="pushnotifications">- Push notifications</h2>
+
+<h3 id="technologies">Technologies</h3>
+
+<h5 id="developmentstack">Development Stack</h5>
+
+<ul>
+<li><a href="https://yarnpkg.com/en/">Yarn</a> <em>(Package Manager)</em></li>
+
+<li><a href="https://facebook.github.io/react-native/">React Native</a> <em>(Cross-Platform Mobile Component Library)</em></li>
+
+<li><a href="https://flow.org/">Flow</a> <em>(Static Type Checking)</em></li>
+
+<li><a href="https://reactnavigation.org/">React Navigation</a> <em>(Front-End Navigation/Router)</em></li>
+
+<li><a href="https://mobx.js.org/">Mobx</a> <em>(State Manager)</em></li>
+
+<li><a href="https://realm.io/products/realm-database">RealM</a> <em>(Mobile database)</em></li>
+
+<li><a href="https://www.mongodb.com/">MongoDB</a> <em>(NoSQL Database)</em></li>
+
+<li><a href="https://jestjs.io/">Jest</a> <em>(Testing Framework)</em></li>
+</ul>
+
+<h5 id="operationsstack">Operations Stack</h5>
+
+<ul>
+<li><a href="https://www.docker.com">Docker</a> <em>(Container System)</em></li>
+
+<li><a href="https://travis-ci.org/">Travis CI</a> <em>(Continuous Integration Tool)</em></li>
+
+<li><a href="https://aws.amazon.com/">Amazon Web Services</a> <em>(Cloud Provider)</em></li>
+</ul>
+
+<h2 id="githubhttpsgithubcomsourcecontrol">- <a href="https://github.com/">Github</a> <em>(Source Control)</em></h2>
+
+<hr />
+
+<h3 id="minimumsystemrequirements">Minimum System Requirements</h3>
+
+<p>As per Docker's minimum requirements:</p>
+
+<ul>
+<li>Linux kernel version 3.10 or higher/64-bit Windows 7+/macOS El Capitan 10.11 or Newer</li>
+
+<li>2 GB RAM</li>
+
+<li>Static IP address</li>
+
+<li>VirtualBox v4.3.31 and higher</li>
+</ul>
+
+<p>Minimum size requirements for the app are currently unknown.</p>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<p>You must have Git and Docker installed. </p>
+
+<p>For instructions on how to install Git, <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">click this link</a>.</p>
+
+<p>For instructions on how to install Docker, <a href="https://docs.docker.com/install/">click this link</a> and download the appropriate installer for your operating system.</p>
+
+<p>Make sure to install <a href="https://docs.docker.com/install/">Docker-CE (Community Edition)</a>, <a href="https://docs.docker.com/compose/install/">Docker Compose</a>, and <a href="https://docs.docker.com/machine/install-machine/">Docker Machine</a>.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>Clone git repository using the following commands:</p>
+
+<pre><code>git clone https://github.com/Motel-California-Dev/Kalooh.git
+cd Kalooh
+</code></pre>
+
+<p>Then, run the following commands:</p>
+
+<pre><code>docker-compose up
+</code></pre>
+
+<p>This will start a container that will run an environment isolated from your OS.</p>
+
+<p>Check to see if the container(s) are running:</p>
+
+<pre><code>docker ps
+</code></pre>
+
+<p>If there is no output or an error, make sure your installations of Docker CE/Compose/Machine are correctly installed.</p>
+
+<p>View the running application at localhost:8080.</p>
+
+<h3 id="howtocontribute">How to Contribute</h3>
+
+<p>All of the source code is hosted on the <a href="https://github.com/Motel-California-Dev/Kalooh">Github repository</a></p>
+
+<p>If you intend to make any significant changes to the codebase, please <a href="https://github.com/Motel-California-Dev/Kalooh/issues">file an issue</a>. By doing this, it allows us to reach an agreement to the proposed changes before any significant effort is made in implementing the change.</p>
+
+<p>Any bug fixes or minor changes can be submitted immediately via a pull request. However, we suggest that you file an issue anyways to detail what it is that you're fixing or changing.</p>
+
+<h4 id="submittingapullrequest">Submitting a Pull Request</h4>
+
+<p>Before submitting a pull request, make sure you:</p>
+
+<ol>
+<li>Fork the repository.</li>
+
+<li>Install the dependencies with <code>yarn install</code>.</li>
+
+<li>Create your own branch separate from the master.</li>
+
+<li>Ensure the test suites pass. Run <code>yarn test</code>. (Add your own tests to the codebase that are relevant to the feature or bugfix you are submitting).</li>
+
+<li>Lint your code using <code>yarn run lint</code> or <code>yarn run prettier</code>.</li>
+
+<li>If everything is working, submit your pull request! </li>
+</ol>
+
+<p>Your code will be reviewed and either returned for further work before being approved, or merged!</p>
+
+<h4 id="howtogetintouch">How to get in touch</h4>
+
+<p>E-Mail: dev.kalooh@gmail.com</p>
